@@ -1,7 +1,10 @@
 import Head from "next/head";
 import styles from "./home.module.css";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import Navbar from "./components/navbar";
+import Jobs from "./components/jobs";
+import Headline from "./components/headline";
 
 const Home = () => {
   const router = useRouter();
@@ -14,10 +17,12 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Box>
-        <Heading as="h1" size="md" onClick={() => router.push("/jobs")}>
-          Riwayat Pekerjaan
-        </Heading>
+      <Navbar />
+
+      <Headline />
+
+      <Box className={styles["container-page"]}>
+        <Jobs />
       </Box>
     </>
   );
