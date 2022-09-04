@@ -32,16 +32,13 @@ const Navbar = () => {
           h="60px"
         />
         <Text p={1} mr={1} cursor="pointer">
-          Home
-        </Text>
-        <Text p={1} mr={1} cursor="pointer">
-          About
-        </Text>
-        <Text p={1} mr={1} cursor="pointer">
           Experience
         </Text>
         <Text p={1} mr={1} cursor="pointer">
           Education
+        </Text>
+        <Text p={1} mr={1} cursor="pointer">
+          About
         </Text>
         <Text p={1} mr={1} cursor="pointerr">
           Certification
@@ -50,6 +47,11 @@ const Navbar = () => {
         <Flex p={1} justifyContent="center" alignItems="center">
           <Text mr={1}>Contact Me</Text>
           <IconButton
+            onClick={() =>
+              router.push(
+                "https://www.linkedin.com/in/muhammad-arfandi-usemahu/"
+              )
+            }
             variant="outline"
             colorScheme="linkedin"
             aria-label="Contact Me"

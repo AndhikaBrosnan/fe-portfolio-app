@@ -2,6 +2,17 @@ import { Box, Heading, Flex, Image, Text, Divider } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/icons";
 import styles from "./styles.module.css";
 
+export const CircleIcon = (props) => (
+  <Icon viewBox="0 0 200 200" {...props}>
+    <path
+      fill="currentColor"
+      d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+    />
+  </Icon>
+);
+
+const dummySkills = ["Javascript", "SQL", "MongoDB", "Typescript", "GoLang"];
+
 const Jobs = () => {
   return (
     <Box p={8}>
@@ -36,29 +47,28 @@ const Jobs = () => {
                 <Box>
                   <Flex justifyContent="flex-start" alignItems="center">
                     <Text>PT. Rekso Nasional Food (RNF)</Text>
-                    <Icon viewBox="0 0 200 200" color="black" size={12}>
-                      <path
-                        fill="currentColor"
-                        d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
-                      />
-                    </Icon>
+                    <CircleIcon boxSize={2} color="black" mr={1} ml={1} />
                     <Text>Full time</Text>
                   </Flex>
                 </Box>
                 <Box>
                   <Flex justifyContent="flex-start" alignItems="center">
                     <Text>Jan 2022 - Present</Text>
-                    <Icon viewBox="0 0 200 200" color="black" size={12}>
-                      <path
-                        fill="currentColor"
-                        d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
-                      />
-                    </Icon>
+                    <CircleIcon boxSize={2} color="black" mr={1} ml={1} />
+
                     <Text>8 mos</Text>
                   </Flex>
                 </Box>
                 <Box>
                   <Text>Jakarta, Indonesia</Text>
+                </Box>
+                <Box mt={1}>
+                  <Text>
+                    <span style={{ fontWeight: "500" }}>Skills:</span>{" "}
+                    {dummySkills.map((item, i) => (
+                      <span>{item}, </span>
+                    ))}{" "}
+                  </Text>
                 </Box>
               </Box>
             </Flex>

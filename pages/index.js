@@ -5,10 +5,9 @@ import { useRouter } from "next/router";
 import Navbar from "./components/navbar";
 import Jobs from "./components/jobs";
 import Headline from "./components/headline";
+import Education from "./components/education";
 
 const Home = () => {
-  const router = useRouter();
-
   return (
     <>
       <Head>
@@ -18,11 +17,11 @@ const Home = () => {
       </Head>
 
       <Navbar />
-
       <Headline />
 
       <Box className={styles["container-page"]}>
         <Jobs />
+        <Education />
       </Box>
     </>
   );
