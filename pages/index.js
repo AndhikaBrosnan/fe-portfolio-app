@@ -6,8 +6,12 @@ import Navbar from "./components/navbar";
 import Jobs from "./components/jobs";
 import Headline from "./components/headline";
 import Education from "./components/education";
+import Certification from "./components/certification";
+import { isMobileHandler } from "../helpers/responsive";
+import MobileNavbar from "./components/navbar/mobileLayout";
 
 const Home = () => {
+  const isMobile = isMobileHandler();
   return (
     <>
       <Head>
@@ -16,12 +20,13 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      {isMobile ? <MobileNavbar /> : <Navbar />}
       <Headline />
 
       <Box className={styles["container-page"]}>
         <Jobs />
         <Education />
+        <Certification />
       </Box>
     </>
   );
