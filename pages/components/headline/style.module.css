@@ -4,3 +4,9 @@
   height: 10rem;
   padding: 1em 10rem;
 }
+
+@media (max-width: 768px) {
+  .container-headline {
+    padding: 1em 1em !important;
+  }
+}

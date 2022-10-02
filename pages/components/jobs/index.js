@@ -1,6 +1,7 @@
 import { Box, Heading, Flex, Image, Text, Divider } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/icons";
 import styles from "./styles.module.css";
+import { isMobileHandler } from "../../../helpers/responsive";
 
 export const CircleIcon = (props) => (
   <Icon viewBox="0 0 200 200" {...props}>
@@ -14,8 +15,9 @@ export const CircleIcon = (props) => (
 const dummySkills = ["Javascript", "SQL", "MongoDB", "Typescript", "GoLang"];
 
 const Jobs = () => {
+  const isMobile = isMobileHandler();
   return (
-    <Box p={8}>
+    <Box p={isMobile ? null : 8}>
       <Heading as="h2" size="lg" mb={3}>
         Riwayat Pekerjaan
       </Heading>

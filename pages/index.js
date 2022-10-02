@@ -8,7 +8,8 @@ import Headline from "./components/headline";
 import Education from "./components/education";
 import Certification from "./components/certification";
 import { isMobileHandler } from "../helpers/responsive";
-import MobileNavbar from "./components/navbar/mobileLayout";
+import MobileNavbar from "./components/navbar/mobile";
+import HeadlineMobile from "./components/headline/mobile";
 
 const Home = () => {
   const isMobile = isMobileHandler();
