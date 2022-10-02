@@ -1,9 +1,11 @@
 import { Box, Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { isMobileHandler } from "../../../helpers/responsive";
 import styles from "./style.module.css";
 
 const Education = () => {
+  const isMobile = isMobileHandler();
   return (
-    <Box p={8}>
+    <Box p={isMobile ? null : 8}>
       <Heading as="h2" size="lg" mb={3}>
         Riwayat Pendidikan
       </Heading>
