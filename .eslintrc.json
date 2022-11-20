@@ -10,9 +10,11 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
+  "ignorePatterns": ["next.config.js", "^_"],
   "rules": {
-    "indent": ["error", "tab"],
-    "linebreak-style": ["error", "unix"],
+    "indent": ["error", 2],
+    "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": 0,
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
     "no-console": [

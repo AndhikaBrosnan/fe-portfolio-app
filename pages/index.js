@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "./home.module.css";
-import { Box, Button } from "@chakra-ui/react";
-import { useRouter } from "next/router";
+import { Box } from "@chakra-ui/react";
 import Navbar from "./components/navbar";
 import Jobs from "./components/jobs";
 import Headline from "./components/headline";
@@ -9,7 +8,6 @@ import Education from "./components/education";
 import Certification from "./components/certification";
 import { isMobileHandler } from "../helpers/responsive";
 import MobileNavbar from "./components/navbar/mobile";
-import HeadlineMobile from "./components/headline/mobile";
 
 const Home = () => {
   const isMobile = isMobileHandler();

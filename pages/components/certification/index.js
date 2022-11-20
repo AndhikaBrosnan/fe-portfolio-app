@@ -12,7 +12,7 @@ const Certification = () => {
 
       {[0, 1].map((item) => {
         return (
-          <>
+          <Box key={item}>
             <Flex
               justifyContent="center"
               alignItems="center"
@@ -46,7 +46,7 @@ const Certification = () => {
               </Box>
             </Flex>
             <Divider w="50%" />
-          </>
+          </Box>
         );
       })}
     </Box>
