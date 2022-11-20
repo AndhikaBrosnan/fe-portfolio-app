@@ -11,7 +11,7 @@ const Headline = () => {
         <Box className={styles["profile-photo"]}>
           <Image
             src="https://bit.ly/dan-abramov"
-            alt="profilePhoto"
+            alt="profilePhoto img"
             objectFit="cover"
             borderRadius="full"
             boxSize="150px"

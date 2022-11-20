@@ -10,7 +10,7 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "ignorePatterns": ["next.config.js", "^_"],
+  "ignorePatterns": ["*.config.js", "^_"],
   "rules": {
     "indent": ["error", 2],
     "react/react-in-jsx-scope": "off",
