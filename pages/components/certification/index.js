@@ -4,6 +4,7 @@ import styles from "./style.module.css";
 
 const Certification = () => {
   const isMobile = isMobileHandler();
+
   return (
     <Box p={isMobile ? null : 8}>
       <Heading as="h2" size="lg" mb={3}>
