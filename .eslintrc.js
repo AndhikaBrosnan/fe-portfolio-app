@@ -3,17 +3,25 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:react/recommended', 'airbnb'],
+  extends: ["eslint:recommended", "plugin:react/recommended", "prettier"],
   overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    ecmaVersion: "latest",
+    sourceType: "module"
   },
-  plugins: ['react'],
-  rules: {},
+  plugins: ["react"],
+  rules: {
+    "no-console": [
+      "error",
+      {
+        allow: ["warn", "error", "info"]
+      }
+    ],
+    "no-unused-vars": "error"
+  },
   settings: {
     react: {
-      version: 'latest'
+      version: "latest"
     }
   }
 };
