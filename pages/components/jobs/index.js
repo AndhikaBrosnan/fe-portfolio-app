@@ -24,7 +24,7 @@ const Jobs = () => {
 
       {[0, 1, 2, 3].map((item) => {
         return (
-          <>
+          <Box key={item}>
             <Flex
               justifyContent="center"
               alignItems="center"
@@ -67,15 +67,15 @@ const Jobs = () => {
                 <Box mt={1}>
                   <Text>
                     <span style={{ fontWeight: "500" }}>Skills:</span>{" "}
-                    {dummySkills.map((item, i) => (
-                      <span>{item}, </span>
+                    {dummySkills.map((item) => (
+                      <span key={item}>{item}, </span>
                     ))}{" "}
                   </Text>
                 </Box>
               </Box>
             </Flex>
             <Divider w="50%" />
-          </>
+          </Box>
         );
       })}
     </Box>

@@ -12,7 +12,7 @@ const Education = () => {
 
       {[0, 1, 2, 3].map((item) => {
         return (
-          <>
+          <Box key={item}>
             <Flex
               justifyContent="center"
               alignItems="center"
@@ -46,7 +46,7 @@ const Education = () => {
               </Box>
             </Flex>
             <Divider w="50%" />
-          </>
+          </Box>
         );
       })}
     </Box>
