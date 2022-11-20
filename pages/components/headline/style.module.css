@@ -1,8 +1,13 @@
 .container-headline {
+  position: relative;
   background-color: brown;
   color: white;
-  height: 10rem;
+  height: fit-content;
   padding: 1em 10rem;
+}
+
+.profile-photo {
+  margin-right: 3em;
 }
 
 @media (max-width: 768px) {
