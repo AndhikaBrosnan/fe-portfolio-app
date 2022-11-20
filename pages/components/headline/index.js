@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 
 const Headline = () => {
   const isMobile = isMobileHandler();
-  console.log("error pls test");
+  console.log("error pls test zz");
 
   return (
     <Box className={styles["container-headline"]}>
